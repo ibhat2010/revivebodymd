@@ -1,0 +1,121 @@
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Landing Hero</title>
+                    <!-- Google Font -->
+                    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+                    <style>
+                        body, html {
+                            margin: 0;
+                            padding: 0%;
+                            height: 100%;
+                            overflow: hidden;
+                            font-family: 'EB Garamond', serif;
+                        }
+                        .hero-section {
+                            position: relative;
+                            width: 100%;
+                            height: 100vh;
+                            color: white;
+                            display: flex;
+                            justify-content: center; /* Align content to the left */
+                            align-items: center;
+                            overflow: hidden;
+                        }
+                        .hero-section video {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            z-index: -1;
+                            filter: contrast(40%)
+
+                        }
+                        .hero-content {
+                            z-index: 1;
+                            margin-left: 10%; /* Space from the left edge */
+                            text-align: center;
+                        }
+                        .hero-content h1 {
+                            margin: 0;
+                            font-size: 6em;
+                            font-weight: bold;
+                            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+                            color: #FFD700;
+                        }
+                        .hero-content p {
+                            margin: 10px 0;
+                            font-size: 3em;
+                            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for 
+                            readability */
+                            font-family: Inter;
+            
+                        }
+                        
+                        .hero-content .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: Inter;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Gold glow */
+}
+
+.hero-content .btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.9), 
+                0 0 30px rgba(255, 215, 0, 0.7); /* Stronger glow on hover */
+}
+
+@media only screen and (max-width: 600px) {
+                          .hero-content h1 {
+                            font-size:  3.8em;
+                          }
+                            .hero-content p {
+                                font-size: 2em;
+                            }
+                        }
+
+                
+                        
+                        
+                    </style>
+                </head>
+                <body>
+                    <div class="hero-section">
+                        <video autoplay muted loop playsinline>
+                            <source src="https://files.catbox.moe/ab41wr.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    
+                        <div class="hero-content">
+                            <h1>25th Anniversary</h1>
+                            <h1>Grand Reopening Event!</h1>
+                            <br>
+                            <br>
+                            
+                            <hr style="margin: auto; width: 80%;">
+                            
+                            <p>Friday December 6</p>
+                            <p> 1PM - 7PM</p>
+                            <hr style="margin: auto; width: 50%;">
+                            <a href="https://revivebodymd.softr.app/form" target="_blank" class="btn">RSVP</a>
+                        </div>
+                  
+                    </div>
+                </body>
+                </html>
